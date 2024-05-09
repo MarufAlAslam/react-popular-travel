@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import Navbar from '../../components/navbar'
 
 const MainPage = () => {
     const [data, setData] = useState([])
@@ -11,9 +12,9 @@ const MainPage = () => {
 
     console.log(data)
     return (
-        <div>
-            Main page
-        </div>
+        <>
+            <Navbar />
+        </>
     )
 }
 
