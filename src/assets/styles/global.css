@@ -4,3 +4,12 @@
     margin: 0 auto;
     padding: 0 16px;
 }
+
+select {
+    appearance: none;
+    background: url("https://cdn-icons-png.flaticon.com/512/120/120890.png");
+    background-size: 12px;
+    background-repeat: no-repeat;
+    background-position: 90%;
+    padding-right: 30px !important;
+}

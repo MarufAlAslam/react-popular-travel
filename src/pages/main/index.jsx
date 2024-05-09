@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Navbar from '../../components/navbar'
+import PageTitle from '../../components/pageTitle'
+import Search from '../../components/search'
 
 const MainPage = () => {
     const [data, setData] = useState([])
@@ -14,6 +16,8 @@ const MainPage = () => {
     return (
         <>
             <Navbar />
+            <PageTitle />
+            <Search />
         </>
     )
 }
