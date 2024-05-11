@@ -5,9 +5,9 @@ const SearchForm = ({ handleSubmit }) => {
         <>
             <form action="" onSubmit={handleSubmit}>
                 <div className="flex justify-between items-center gap-3">
-                    <input type="text" className='border border-black px-4 py-2' placeholder='From' name="locFrom" id="" />
-                    <input type="text" className='border border-black px-4 py-2' placeholder='To' name="locTo" id="" />
-                    <input type="date" className='border border-black px-4 py-2' placeholder='' name="journeyDate" id="" />
+                    <input required type="text" className='border border-black px-4 py-2' placeholder='From' name="locFrom" id="" />
+                    <input required type="text" className='border border-black px-4 py-2' placeholder='To' name="locTo" id="" />
+                    <input required type="date" className='border border-black px-4 py-2' placeholder='' name="journeyDate" id="" />
                     <button className='border border-black px-4 py-2' type='button'>
                         Day -
                     </button>
@@ -21,7 +21,7 @@ const SearchForm = ({ handleSubmit }) => {
                     <select name="" className='border border-black px-4 py-2' id="">
                         <option value="adt">ADT</option>
                     </select>
-                    <select name="numPassanger" className='border border-black px-4 py-2' id="">
+                    <select required name="numPassanger" className='border border-black px-4 py-2' id="">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>

@@ -1,20 +1,11 @@
 import React, { useEffect, useState } from 'react'
 
-const Result = () => {
-    const [data, setData] = useState([])
+const Result = ({data}) => {
     const [message, setMessage] = useState('')
-
-    useEffect(() => {
-        fetch('./data.json')
-            .then(response => response.json())
-            .then(json => setData(json))
-    }, [])
 
     useEffect(() => {
         setMessage(data[0]?.message)
     }, [data])
-
-    console.log(data[0]?.flightOffer)
     return (
         <div className='py-2'>
             <div className="container">

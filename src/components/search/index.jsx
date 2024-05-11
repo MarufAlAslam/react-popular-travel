@@ -1,32 +1,10 @@
 import React, { useState } from 'react'
 import SearchForm from '../searchForm'
 
-const Search = () => {
+const Search = ({handleSubmit}) => {
     const [activeBtn, setActiveBtn] = useState('Round Trip')
     const changeState = (value) => {
         setActiveBtn(value)
-    }
-
-    const handleSubmit = (e) => {
-        e.preventDefault()
-
-        const form = e.target
-
-        const locFrom = form.locFrom.value
-        const locTo = form.locTo.value
-        const journeyDate = form.journeyDate.value
-        const journeyTime = form.journeyTime.value
-        const numPassanger = form.numPassanger.value
-
-        const data = {
-            locFrom,
-            locTo,
-            journeyDate,
-            journeyTime,
-            numPassanger
-        }
-
-        console.log(data)
     }
     return (
         <div className='pt-5'>
