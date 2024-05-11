@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import SearchForm from '../searchForm'
 
-const Search = ({handleSubmit}) => {
-    const [activeBtn, setActiveBtn] = useState('Round Trip')
+const Search = ({ handleSubmit }) => {
+    const [activeBtn, setActiveBtn] = useState('One Way')
     const changeState = (value) => {
         setActiveBtn(value)
     }

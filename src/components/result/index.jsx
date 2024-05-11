@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-const Result = ({data}) => {
+const Result = ({ data, journeyStartedFrom, setJourneyStartedFrom, setJourneyEndedTo, setFlightDate, setAvailableSeats }) => {
     const [message, setMessage] = useState('')
 
     useEffect(() => {
@@ -9,7 +9,7 @@ const Result = ({data}) => {
     return (
         <div className='py-2'>
             <div className="container">
-                {message}
+                <p>{message}</p>
             </div>
 
             <div className="container">
@@ -56,7 +56,7 @@ const Result = ({data}) => {
                                     ))
                                 }</td>
                                 <td className={`py-1 text-xs text-center ${index % 2 === 0 ? "bg-[#f3f4f6]" : "bg-[#e5e7eb]"}`}>{
-                                    item.class.map((item, index) => (
+                                    item.class.map((item) => (
                                         item.map((classItem, index) => (
                                             <span key={index}>
                                                 {classItem}
@@ -66,7 +66,7 @@ const Result = ({data}) => {
                                         )))}
                                 </td>
                                 <td className={`py-1 text-xs text-center ${index % 2 === 0 ? "bg-[#f3f4f6]" : "bg-[#e5e7eb]"}`}>{
-                                    item.fareBasis.map((fares, index) => (
+                                    item.fareBasis.map((fares) => (
                                         fares.map((fare, index) => (
                                             <span key={index}>
                                                 {fare}
