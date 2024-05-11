@@ -5,23 +5,23 @@ const SearchForm = ({ handleSubmit }) => {
         <>
             <form action="" onSubmit={handleSubmit}>
                 <div className="flex justify-between items-center gap-3">
-                    <input type="text" className='border border-black px-4 py-2' placeholder='From' name="" id="" />
-                    <input type="text" className='border border-black px-4 py-2' placeholder='To' name="" id="" />
-                    <input type="date" className='border border-black px-4 py-2' placeholder='' name="" id="" />
-                    <button className='border border-black px-4 py-2'>
+                    <input type="text" className='border border-black px-4 py-2' placeholder='From' name="locFrom" id="" />
+                    <input type="text" className='border border-black px-4 py-2' placeholder='To' name="locTo" id="" />
+                    <input type="date" className='border border-black px-4 py-2' placeholder='' name="journeyDate" id="" />
+                    <button className='border border-black px-4 py-2' type='button'>
                         Day -
                     </button>
-                    <button className='border border-black px-4 py-2'>
+                    <button className='border border-black px-4 py-2' type='button'>
                         Day +
                     </button>
-                    <select name="" className='border border-black px-4 py-2' id="">
+                    <select name="journeyTime" className='border border-black px-4 py-2' id="">
                         <option value="anytime">Any Time</option>
                     </select>
                     <span className='text-xl'>+</span>
                     <select name="" className='border border-black px-4 py-2' id="">
                         <option value="adt">ADT</option>
                     </select>
-                    <select name="" className='border border-black px-4 py-2' id="">
+                    <select name="numPassanger" className='border border-black px-4 py-2' id="">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>

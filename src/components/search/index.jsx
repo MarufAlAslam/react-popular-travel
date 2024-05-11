@@ -9,10 +9,27 @@ const Search = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        console.log('submit')
+
+        const form = e.target
+
+        const locFrom = form.locFrom.value
+        const locTo = form.locTo.value
+        const journeyDate = form.journeyDate.value
+        const journeyTime = form.journeyTime.value
+        const numPassanger = form.numPassanger.value
+
+        const data = {
+            locFrom,
+            locTo,
+            journeyDate,
+            journeyTime,
+            numPassanger
+        }
+
+        console.log(data)
     }
     return (
-        <div className='py-5'>
+        <div className='pt-5'>
             <div className="container">
                 <div className="flex justify-center items-center">
                     <button onClick={() => changeState("Round Trip")} className={`btn text-sm border border-[#312e81] py-1 px-6 ${activeBtn === "Round Trip" ? "bg-[#312e81] text-white" : "bg-white text-black"}`}>Round Trip</button>
@@ -22,7 +39,7 @@ const Search = () => {
 
                 <div className="line mt-6 mb-3 bg-[#818cf8] h-[1px]"></div>
                 <SearchForm handleSubmit={handleSubmit} />
-                <div className="line mt-3 mb-6 bg-[#818cf8] h-[1px]"></div>
+                <div className="line mt-3 bg-[#818cf8] h-[1px]"></div>
             </div>
         </div>
     )
