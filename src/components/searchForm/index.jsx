@@ -4,9 +4,9 @@ const SearchForm = ({ handleSubmit }) => {
     return (
         <>
             <form action="" onSubmit={handleSubmit}>
-                <div className="flex justify-between items-center gap-3">
-                    <input type="text" className='border border-black px-4 py-2' placeholder='From' name="locFrom" id="" />
-                    <input type="text" className='border border-black px-4 py-2' placeholder='To' name="locTo" id="" />
+                <div className="flex flex-wrap justify-start lg:justify-between items-center gap-3">
+                    <input type="text" className='border md:w-auto w-full border-black px-4 py-2' placeholder='From' name="locFrom" id="" />
+                    <input type="text" className='border md:w-auto w-full border-black px-4 py-2' placeholder='To' name="locTo" id="" />
                     <input type="date" className='border border-black px-4 py-2' placeholder='' name="journeyDate" id="" />
                     <button className='border border-black px-4 py-2' type='button'>
                         Day -
@@ -38,15 +38,15 @@ const SearchForm = ({ handleSubmit }) => {
                 <div className="line mt-3 mb-3 bg-[#818cf8] h-[1px]"></div>
 
                 <div className="flex justify-between items-center">
-                    <div className="left flex justify-start items-center gap-2">
+                    <div className="left hidden md:flex justify-start items-center gap-2">
                         <input type="checkbox" name="" id="extra" />
                         <label htmlFor="extra" className='text-sm'>Extra Options</label>
                     </div>
 
                     <div className="center flex justify-center items-center gap-3">
-                        <span className='text-sm'>Environment</span>
+                        <span className='text-sm hidden md:block'>Environment</span>
                         <div className="flex justify-start items-center gap-2">
-                            <input type="radio" name="env" checked id="dummy" />
+                            <input type="radio" name="env" checked onChange={() => { }} id="dummy" />
                             <label htmlFor="dummy" className='text-sm'>Dummy</label>
                         </div>
                         <div className="flex justify-start items-center gap-2">

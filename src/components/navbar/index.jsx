@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaBars } from 'react-icons/fa';
 import { HiOutlineBell } from "react-icons/hi2";
 
 const Navbar = () => {
@@ -6,7 +7,10 @@ const Navbar = () => {
         <div className='nav bg-[#1f2937] py-5'>
             <div className="container">
                 <div className="flex justify-between items-center">
-                    <div className="flex justify-start items-center gap-12">
+                    <button className='md:hidden block text-white'>
+                        <FaBars />
+                    </button>
+                    <div className="hidden md:flex justify-start items-center gap-12">
                         <a href="/" className='text-white opacity-70 text-lg'>
                             Dashboard
                         </a>
