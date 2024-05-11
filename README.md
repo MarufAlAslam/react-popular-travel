@@ -36,6 +36,27 @@ if you found any difficulty in running and viewing the project, Here is a link t
 ### Time Spent
 I've spent around 4-5 hours(Approx) in 2 days(not continuously, as it was supposed to be submitted in 5 days) to complete the project. I've spent most of the time on the styling of the project as I wanted to make it look as close as possible to the image provided in the project requirements, as the position is for a frontend developer, and my first priority is how user can see the site.
 
+### Best Practices
+I've followed the best practices to build the project. 
+1. I've used the components to make the project more readable and maintainable. 
+2. I've used the tailwind css to style the project as it's a modern way to style the project and it's easy to use. 
+3. I've used the react-icons library to use the icons in the project. 
+4. I've used the json data provided in the project requirements to display the data in the table.
+5. I've used the react props passing to pass the data from parent to child components as it's a small project and it's not complex to handle props in smaller projects like this one.
+6. I've made the project responsive for all devices so that it can be accessed from any device.
+7. I've put the project on the netlify to make it live and accessible for everyone.
+8. I've used the git version control to keep track of the changes I've made in the project.
+
+### Additional Informations
+Also, as you were asking for 2 of my live frontend project links, here they are:
+1. https://sbsa-panel.netlify.app - it will require a one time login and the credentials are [user: sbsatestadmin, sbsatestpassword@]
+    built with html, css, bootstrap and some other frontend technologies
+    github repo: https://github.com/MarufAlAslam/sbsa-dashboard-html-bootstrap
+
+2. https://sensar.netlify.app - it's actually a fullstack project built with MERN (and love), but from here you can check the frontend part. If needed I can provide the backend part as well.
+    built with react.js(in frontend), express.js(in backend), mongoDB(database), and node.js(environment)
+    github repo: https://github.com/MarufAlAslam/sensar-react-frontend
+
 ### Important Files/Folders
 - **./src/index.js**: The main file that contains the main structure of the project.
 - **./src/assets**: The folder that contains the images and css used in the project.
