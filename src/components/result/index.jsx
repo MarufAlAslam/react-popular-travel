@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-const Result = ({ data, journeyStartedFrom, setJourneyStartedFrom, setJourneyEndedTo, setFlightDate, setAvailableSeats }) => {
+const Result = ({ data }) => {
     const [message, setMessage] = useState('')
 
     useEffect(() => {

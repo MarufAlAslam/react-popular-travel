@@ -5,14 +5,9 @@ import Search from '../../components/search'
 import Result from '../../components/result'
 
 const MainPage = () => {
+    const [formSubmitted, setFormSubmitted] = useState(false)
     const [data, setData] = useState([])
     const [formData, setFormData] = useState({})
-    const [journeyStartedFrom, setJourneyStartedFrom] = useState([])
-    const [journeyEndedTo, setJourneyEndedTo] = useState('')
-    const [flightDate, setFlightDate] = useState('')
-    const [availableSeats, setAvailableSeats] = useState(0)
-
-    console.log(journeyStartedFrom, journeyEndedTo, flightDate, availableSeats)
 
     useEffect(() => {
         fetch('./data.json')
@@ -21,6 +16,7 @@ const MainPage = () => {
     }, [])
 
     const handleSubmit = (e) => {
+        setFormSubmitted(true)
         e.preventDefault()
 
         const form = e.target
@@ -48,13 +44,7 @@ const MainPage = () => {
             <Navbar />
             <PageTitle />
             <Search handleSubmit={handleSubmit} />
-            <Result
-                data={data}
-                journeyStartedFrom={journeyStartedFrom}
-                setJourneyStartedFrom={setJourneyStartedFrom}
-                setJourneyEndedTo={setJourneyEndedTo}
-                setFlightDate={setFlightDate}
-                setAvailableSeats={setAvailableSeats} />
+            {formSubmitted && <Result data={data} />}
         </>
     )
 }
