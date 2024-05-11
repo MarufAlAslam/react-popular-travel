@@ -2,6 +2,9 @@
 
 In this project, I have fully implemented the requirements of the project that was given to me. I'm going to explain the project and the requirements in detail.
 
+### Screenshot
+<img src="https://i.ibb.co/xfG1hNH/populartravels.png" alt="populartravels" border="0">
+
 ### Project Description
 I've used React.js to complete the assesment as it was the most suitable library for the project I think. So, this simple web app is a single page application that displays the parsed json in a table as a list of items with all the details as like the image provided in the project requirements. 
 
